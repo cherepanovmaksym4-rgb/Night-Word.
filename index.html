@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NIGHT WORLD - Центр Поддержки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NIGHT WORLD</h1>
+    <nav>
+      <button onclick="showSection('about')">О проекте</button>
+      <button onclick="showSection('rules')">Правила</button>
+      <button onclick="showSection('contact')">Онлайн-поддержка</button>
+      <button onclick="showSection('ai')">ИИ поддержка</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hidden">
+      <h2>О проекте</h2>
+      <p>Этот проект создан для того, чтобы помогать людям получать поддержку, советы и ресурсы для улучшения самочувствия.</p>
+    </section>
+
+    <section id="rules" class="hidden">
+      <h2>Правила</h2>
+      <ul>
+        <li>Будьте уважительны друг к другу</li>
+        <li>Соблюдайте правила безопасности</li>
+        <li>Следуйте нормам сообщества</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="hidden">
+      <h2>Онлайн-поддержка</h2>
+      <button onclick="startChat()">Начать чат</button>
+      <div id="chatBox"></div>
+    </section>
+
+    <section id="ai" class="hidden">
+      <h2>ИИ поддержка</h2>
+      <textarea id="aiInput" placeholder="Введите ваш вопрос..."></textarea>
+      <button onclick="askAI()">Задать вопрос ИИ</button>
+      <div id="aiResponse"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
